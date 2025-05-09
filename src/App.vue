@@ -108,4 +108,24 @@ body {
   font-size: 2rem;
   font-weight: bold;
 }
+
+.todo-form {
+  display: flex;
+  gap: 0.75rem;
+  margin-bottom: 1.25rem;
+}
+
+.todo-input {
+  flex-grow: 1;
+  padding: 0.75rem;
+  border: 2px solid #d1c4e9;
+  border-radius: 0.75rem;
+  font-size: 1rem;
+  transition: border 0.3s ease;
+}
+
+.todo-input:focus {
+  border-color: #7e57c2;
+  outline: none;
+}
 </style>
