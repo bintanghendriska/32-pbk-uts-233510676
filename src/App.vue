@@ -3,7 +3,7 @@ import { ref, computed } from 'vue'
 
 const newTodo = ref('')
 const todos = ref([])
-
+const filter = ref('all')
 
 const addTodo = () => {
   if (newTodo.value.trim()) {
@@ -22,9 +22,22 @@ const deleteTodo = (todoToDelete) => {
 const clearCompleted = () => {
   todos.value = todos.value.filter(todo => !todo.completed)
 }
+
+const filteredTodos = computed(() => {
+  if (filter.value === 'complete') {
+    return todos.value.filter(todo => todo.completed)
+  } else if (filter.value === 'incomplete') {
+    return todos.value.filter(todo => !todo.completed)
+  }
+  return todos.value
+})
 </script>
 
 <template>
+  <div class="app-container">
+    <div class="todo-container">
+      <h1 class="title">To-Do List</h1>
+
       <form @submit.prevent="addTodo" class="todo-form">
         <input v-model="newTodo" type="text" placeholder="Tambahkan kegiatan..." class="todo-input">
         <button type="submit" class="todo-button">Tambah</button>
@@ -51,8 +64,19 @@ const clearCompleted = () => {
           <button @click="deleteTodo(todo)" class="delete-button">Hapus</button>
         </li>
       </ul>
+
+      <div class="clear-completed-section">
+        <button @click="clearCompleted" class="clear-button">Hapus Semua yang Selesai</button>
+      </div>
+    </div>
+  </div>
 </template>
 
-<style scoped>
-
+<style>
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  background: linear-gradient(135deg, #f6f9ff, #eae6ff);
+  min-height: 100vh;
+}
 </style>
