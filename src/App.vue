@@ -173,4 +173,55 @@ body {
 .todo-item:hover {
   background-color: #d1c4e9;
 }
+
+.todo-text-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.todo-text {
+  color: #4a148c;
+  font-size: 1rem;
+}
+
+.todo-text.completed {
+  text-decoration: line-through;
+  color: #9e9e9e;
+  font-style: italic;
+}
+
+.delete-button {
+  background: none;
+  border: none;
+  color: #e53935;
+  cursor: pointer;
+  font-size: 0.95rem;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.delete-button:hover {
+  color: #b71c1c;
+}
+
+.clear-completed-section {
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.clear-button {
+  background-color: #ef5350;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.75rem;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.clear-button:hover {
+  background-color: #c62828;
+}
 </style>
