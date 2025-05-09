@@ -100,4 +100,12 @@ body {
 .todo-container:hover {
   box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
 }
+
+.title {
+  text-align: center;
+  color: #4a148c;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  font-weight: bold;
+}
 </style>
