@@ -152,4 +152,25 @@ body {
   font-size: 0.95rem;
   color: #4a148c;
 }
+
+.todo-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ede7f6;
+  padding: 0.75rem 1rem;
+  border-radius: 0.75rem;
+  margin-bottom: 0.75rem;
+  transition: background-color 0.3s ease;
+}
+
+.todo-item:hover {
+  background-color: #d1c4e9;
+}
 </style>
