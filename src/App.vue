@@ -143,4 +143,13 @@ body {
 .todo-button:hover {
   background-color: #5e35b1;
 }
+
+.filter-section {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+  color: #4a148c;
+}
 </style>
