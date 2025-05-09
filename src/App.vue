@@ -79,4 +79,25 @@ body {
   background: linear-gradient(135deg, #f6f9ff, #eae6ff);
   min-height: 100vh;
 }
+
+.app-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.todo-container {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+  transition: box-shadow 0.3s ease;
+}
+
+.todo-container:hover {
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+}
 </style>
