@@ -128,4 +128,19 @@ body {
   border-color: #7e57c2;
   outline: none;
 }
+
+.todo-button {
+  background-color: #7e57c2;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.25rem;
+  border-radius: 0.75rem;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.todo-button:hover {
+  background-color: #5e35b1;
+}
 </style>
